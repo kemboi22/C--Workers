@@ -31,7 +31,6 @@ namespace WorkersAssignment1
         /// </summary>
         private void InitializeComponent()
         {
-            this.DashboardLabel = new System.Windows.Forms.Label();
             this.AllCustomersBtn = new System.Windows.Forms.Button();
             this.MarketingBtn = new System.Windows.Forms.Button();
             this.AllTransactionsBtn = new System.Windows.Forms.Button();
@@ -42,16 +41,8 @@ namespace WorkersAssignment1
             this.Quit = new System.Windows.Forms.Button();
             this.Scheduling = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // DashboardLabel
-            // 
-            this.DashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DashboardLabel.Location = new System.Drawing.Point(308, 9);
-            this.DashboardLabel.Name = "DashboardLabel";
-            this.DashboardLabel.Size = new System.Drawing.Size(167, 36);
-            this.DashboardLabel.TabIndex = 0;
-            this.DashboardLabel.Text = "DASHBOARD";
             // 
             // AllCustomersBtn
             // 
@@ -156,11 +147,21 @@ namespace WorkersAssignment1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(312, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(221, 38);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "DASHBOARD";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Scheduling);
             this.Controls.Add(this.Quit);
@@ -171,11 +172,12 @@ namespace WorkersAssignment1
             this.Controls.Add(this.AllTransactionsBtn);
             this.Controls.Add(this.MarketingBtn);
             this.Controls.Add(this.AllCustomersBtn);
-            this.Controls.Add(this.DashboardLabel);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.Button button1;
 
@@ -194,8 +196,6 @@ namespace WorkersAssignment1
         private System.Windows.Forms.Button MarketingBtn;
         private System.Windows.Forms.Button AllTransactionsBtn;
         private System.Windows.Forms.Button StaffBtn;
-
-        private System.Windows.Forms.Label DashboardLabel;
 
         #endregion
     }

@@ -13,10 +13,8 @@ namespace WorkersAssignment1
             InitializeComponent();
         }
         OleDbConnection con =
-            new OleDbConnection(
-                "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"C:\\Users\\KEMBOI ELVIS\\Downloads\\lawn_care.mdb\"");
-        OleDbCommand cmd = new OleDbCommand(); 
-        OleDbDataAdapter da = new OleDbDataAdapter();        
+            new OleDbConnection(Connection.ConnectionString);
+              
 
 
         private void AllCustomersBtn_Click(object sender, EventArgs e)
